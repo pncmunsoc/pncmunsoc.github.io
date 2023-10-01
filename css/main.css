@@ -276,7 +276,7 @@ body {
 .main-article__headerh6{
 	text-transform: uppercase;
 	font-size: calc(var(--index) * 0.5);
-        margin-top: -25px;
+        margin-top: -10px;
 	letter-spacing: calc(var(--index) / 10);
 	transform: var(--main-article-transform);
 	transition: var(--transition);
