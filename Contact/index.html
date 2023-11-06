@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact | PNCMUN</title>
         <link rel="stylesheet" href="style.css">
+
+        <script src="/libs/gsap/gsap.min.js" defer></script>
+	<script src="/libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="/libs/gsap/ScrollSmoother.min.js" defer></script>
+
+	<script src="/js/app.js" defer></script>
 </head>
 <body>
         <header class="ok">
@@ -29,13 +35,26 @@
                 </div>
             </div>
             <br><br>
-            <div class="forms">
-                <form action="">
-                        <input type="text" name="" id="">
-                        <br><br>
-                        <input type="text" name="" id="">
-                        <br><br>
+            <br>
+            <center>
+            <div class="contact">
+                <br>
+                <div class="incot">
+                <h1>Contact Us</h1>
+                <form action="https://formspree.io/f/xaygwndj" method="post" >
+                        <input type="text" name="Full Name" placeholder="Full Name" required><br>
+                        <input type="email" name="E-mail" placeholder="E-mail" required><br>
+                        <textarea name="Message" id="" cols="30" rows="5" placeholder="Message" required></textarea><br>
+                        <input type="submit"  value="Submit" class="sub">
+                        <br>
+                        <br>
                 </form>
+        </div>
             </div>
+        </center>
+
+        <div class="bottom">
+                <marquee behavior="" direction="right">For Futhermore Information, Contact: 977**********, Email: <a href = "mailto: pinnaclemunsociety@gmail.com">pinnaclemunsociety@gmail.com</a>, Address: Kapan, Kathmandu</marquee>
+        </div>
 </body>
 </html>
