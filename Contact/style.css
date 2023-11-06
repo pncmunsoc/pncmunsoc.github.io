@@ -180,7 +180,7 @@ body::-webkit-scrollbar {
       {
         font-family: 'Bebas Neue', sans-serif;
         letter-spacing: 3px;
-        font-size: 35px;
+        font-size: 45px;
       }
       .contact input
       {
@@ -226,6 +226,11 @@ body::-webkit-scrollbar {
         background-color: #000000;
         padding-left: 10px;
         color: aqua;
+      }
+      .contact h3
+      {
+        font-weight: 100;
+        letter-spacing: 0.5px;
       }
 
       .bottom
