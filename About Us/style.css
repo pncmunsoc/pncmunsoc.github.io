@@ -163,39 +163,98 @@ body::-webkit-scrollbar {
         }
       }
 
-.header
-{
-        width: auto;
-        height: 40vh;
-        background: rgba(0, 0, 0, 0.5) url(https://1.bp.blogspot.com/-j5genXMFml4/YDmrJzGVP1I/AAAAAAABHzw/v95LjEuRlCMRno62gMEfdUigFn4eXTpOwCLcBGAsYHQ/s2560/city_aerial_view_buildings_200068_2560x1440.jpg);
-        background-position: center;
-        background-blend-mode: darken;
-        font-family:Alkatra;
-        font-size: 50px;
-        background-size: cover;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.header h1
-{
-        color: white;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        position: relative;
+html {
+  font-family: "Montserrat";
 }
-.main
-{
-        width: 80%;
-        background-color: wheat;
-        height: auto;
-        top: 35%;
-        left: 50%;
-        position: absolute;
-        z-index: 1;
-        transform: translate(-50%,5%); 
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items:start;
+  justify-content:start;
+  background-color: #1e1f26;
 }
-.text
-{
-        font-size: 20px;
-        text-align: justify;
-        margin: 40px 100px 40px 100px;
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: aqua; */
 }
+.left {
+  width: 160vh;
+  height: 600px;
+  
+  background: rgba(0, 0, 0, 0.5) url(https://1.bp.blogspot.com/-j5genXMFml4/YDmrJzGVP1I/AAAAAAABHzw/v95LjEuRlCMRno62gMEfdUigFn4eXTpOwCLcBGAsYHQ/s2560/city_aerial_view_buildings_200068_2560x1440.jpg)
+    no-repeat center / cover;
+  border-radius: 8px;
+  background-blend-mode: darken;
+}
+.right {
+  width: 150%;
+  min-height: 400px;
+  background-color: #303137;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 8px;
+  color: white;
+  margin-top: -120px;
+}
+.right h1 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+.left h1
+ {
+        font-size: 100px;
+        font-weight:900;
+        color: antiquewhite;
+        align-items: center;
+        margin: 60px auto;
+        justify-content: center;
+        display: flex;
+      }
+.right p {
+  margin: 20px 0;
+  font-weight: 500;
+  line-height: 25px;
+}
+.right a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  padding: 20px 30px;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 20px;
+  }
+  .left {
+    width: 100%;
+    height: 400px;
+  }
+  .right {
+    width: 90%;
+    margin: 0;
+    margin-top: -100px;
+  }
+}
+

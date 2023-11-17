@@ -1,54 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Us | PNCMUN</title>
-        <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>CodePen - Overlapping Layout With Flex Box</title>
+  <link rel="stylesheet" href="./style.css">
 
-        <script src="/libs/gsap/gsap.min.js" defer></script>
-	<script src="/libs/gsap/ScrollTrigger.min.js" defer></script>
-	<script src="/libs/gsap/ScrollSmoother.min.js" defer></script>
-
-	<script src="/js/app.js" defer></script>
 </head>
 <body>
-        <header class="ok">
-                <a class="logo" href="/"><img src="../img/Logo.png" alt="logo"></a>
-                <nav>
-                    <ul class="nav__links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Conferences</a></li>
-                        <li><a href="">Registration</a></li>
-                    </ul>
-                </nav>
-                <a class="cta" href="#">Contact</a>
-                <p class="menu cta">Menu</p>
-            </header>
-            <div class="overlay">
-                <a class="close">&times;</a>
-                <div class="overlay__content">
-                    <a href="#">Services</a>
-                    <a href="#">Projects</a>
-                    <a href="#">About</a>
+<!-- partial:index.partial.html -->
+<header class="ok">
+        <a class="logo" href="/"><img src="../img/Logo.png" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Conferences</a></li>
+                <li><a href="">Registration</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#">Contact</a>
+        <p class="menu cta">Menu</p>
+    </header>
+    <div class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+
+        <section>
+                <div class="container">
+                  <div class="left">
+                        <h1>About Us</h1>
+                  </div>
+                  <div class="right">
+                    <div class="content">
+                      <h1>This is a heading</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia assumenda dolore reprehenderit ullam blanditiis ex sapiente pariatur tempore incidunt facilis?</p>
+                      <a href="#" class="btn">Click Me</a>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <br><br>
-            <br>
-            <center>
-                <br>
-            <div class="header">
-                <h1>About Us</h1>
-            </div>
-            <div class="main">
-                <div class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nostrum reprehenderit quod! Odio necessitatibus nostrum provident perferendis distinctio quibusdam quae consectetur ea! Nesciunt, suscipit necessitatibus! Enim vero maxime quia blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque autem dolores aperiam aspernatur, adipisci nobis ducimus esse deserunt labore praesentium incidunt velit. Pariatur corporis nemo inventore commodi illum? Pariatur, iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cumque incidunt suscipit, consequatur inventore libero, vel est ad in aspernatur provident explicabo ex. Est quasi quia repellendus laudantium aliquid non!
-                        <br><br>
-                        <h2>Our Main Objective</h2>
-                </div>
-            </div>
-        </center>
+              </section>
 
 </body>
 </html>
