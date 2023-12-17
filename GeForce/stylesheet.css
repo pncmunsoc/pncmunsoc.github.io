@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'GeForce';
+    src: url('GeForce-Bold.eot');
+    src: local('GeForce Bold'), local('GeForce-Bold'),
+        url('GeForce-Bold.eot?#iefix') format('embedded-opentype'),
+        url('GeForce-Bold.woff') format('woff'),
+        url('GeForce-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeForce';
+    src: url('GeForce-Light.eot');
+    src: local('GeForce Regular'), local('GeForce-Light'),
+        url('GeForce-Light.eot?#iefix') format('embedded-opentype'),
+        url('GeForce-Light.woff') format('woff'),
+        url('GeForce-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeForce';
+    src: url('GeForce-Bold-Alt.eot');
+    src: local('GeForce Bold-Alt'), local('GeForce-Bold-Alt'),
+        url('GeForce-Bold-Alt.eot?#iefix') format('embedded-opentype'),
+        url('GeForce-Bold-Alt.woff') format('woff'),
+        url('GeForce-Bold-Alt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeForce';
+    src: url('GeForce-Light-Alt.eot');
+    src: local('GeForce Regular'), local('GeForce-Light-Alt'),
+        url('GeForce-Light-Alt.eot?#iefix') format('embedded-opentype'),
+        url('GeForce-Light-Alt.woff') format('woff'),
+        url('GeForce-Light-Alt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
