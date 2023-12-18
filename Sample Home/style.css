@@ -46,17 +46,18 @@
       
       .ok {
         z-index: 1;
-        display: flex;
-        position: relative;
-        width: 100%;
-        background-color:#12333b;
-        justify-content: space-evenly;
-        padding: 14px 2%;
-        align-items: center;
-        font-size: 14px;
-        letter-spacing: 2px;
-      }
-
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0; /* Keep the element fixed horizontally */
+    width: 100%;
+    background-color: #12333b;
+    justify-content: space-evenly;
+    padding: 14px 2%;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
       .logo {
         cursor: pointer;
       }
@@ -166,7 +167,7 @@
         }
       }
 
-      @media only screen and (max-width: 800px) {
+      @media only screen and (max-width: 1200px) {
         .nav__links,
         .cta {
           display: none;
@@ -205,15 +206,22 @@
           justify-content: space-between;
           font-family: b;
       }
-      .bottom-page1-inner>button{
-          padding: 10px 20px;
-          border: none;
-          border-radius: 50px;
-          background-color: #ffffff;
-          color: #0b48ed;
-          font-size: 20px;
-          font-weight: 900;
-          font-family: b;
+      .bottom-page1-inner > button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #0b48ed;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: b;
+}
+
+/* Add media query to counteract zooming */
+@media only screen and (max-width: 800px) {
+    .bottom-page1-inner > button {
+        transform: scale(0.8); /* Adjust the scale value as needed */
+    }
       }
       .bottom-page1-inner>h4{
           font-size: 1.3vw;
@@ -371,39 +379,58 @@
           color: #0a3cce;
       }
       #page9{
-          display: flex;
           position: relative;
-          height: 100vh;
+          height: 110vh;
+          display: flex;
           width: 100vw;
+          background-color: #fff;
+          font-family: a;
           background: rgba(24, 23, 23, 0.194) url(how.png);
           background-size: cover;
           background-blend-mode: darken;
+          
       }
+     
       .left9{
           height: 100%;
-          width: 40%;
+          width: 110%;
           position: relative;
           font-family: a;
       }
       .left9>h1{
           position: absolute;
-          top: 43%;
-          right: 15%;
-          transform: translateY(-50%);
-          font-size: 5vw;
+          top: 35%;
+          left: 30%;
+          font-size: 4vw;
+          color: #000;
           font-weight: 100;
-          color: #000000;
-          line-height: 1;
       }
       .right9{
-          height: 100%;
-          width: 60%;
-          font-size: 25px;
-          font-family: a;
-          color: rgb(0, 0, 0);
+          display: flex;
+          top: 12%;
+          line-height:50px;
+          left: -10%;
           text-decoration: none;
           position: relative;
+          margin-bottom: 2vw;
+          height: 24%;
+          width: 190%;
 
+      }
+    @media only screen and (max-width: 100px) {
+    .right9{
+         line-height: 12px;/* Adjust the scale value as needed */
+    }
+      }
+      @media only screen and (max-width: 1200px) {
+    .right9{
+         line-height: 20px;/* Adjust the scale value as needed */
+    }
+      }
+      @media only screen and (max-width: 1800px) {
+    .right9{
+         line-height: 30px;/* Adjust the scale value as needed */
+    }
       }
       .right9 a
       {
@@ -415,14 +442,13 @@
       color: red;
       }
       .right9-center{
-          height: 50%;
-          width: 85%;
-          border-radius: 10px;
+         padding-top: 5vw;
+          color: #000;
+          left: 50%;
           position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          background-size: cover;
-          left: 5%;
+          height: 100%;
+          font-family: a;
+          width: 50%;
       }
       #page10{
           position: relative;
@@ -472,6 +498,7 @@
       .page11-inner{
           display: flex;
           top: 18%;
+          text-decoration: none;
           position: relative;
           margin-bottom: 2vw;
           height: 24%;
@@ -496,6 +523,7 @@
           left: 50%;
           position: absolute;
           height: 100%;
+          font-family: a;
           width: 50%;
       }
       .right11>h4{
